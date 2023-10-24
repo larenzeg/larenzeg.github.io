@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgb(76, 76, 76);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -26,7 +26,7 @@
 </head>
 <body class="board">
 	<!-- HTML for the box -->
-	<div class="box">?</div>
+	<div class="box">;)</div>
 
 	<script>
 		(function(){
@@ -62,7 +62,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var positionX = 0
 
 			
 			/* 
@@ -71,8 +71,8 @@
 			turn it around! 
 			*/
 			function update() {
-				
-
+				moveBoxTo(positionX);
+                positionX = positionX + 10;
 			};
 
 			/* 
@@ -81,7 +81,7 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+				positionX = 0;
 
 
 			};
